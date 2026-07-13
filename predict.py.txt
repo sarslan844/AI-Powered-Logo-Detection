@@ -1,0 +1,14 @@
+from ultralytics import YOLO
+
+# Load the trained model
+model = YOLO("weights/best.pt")
+
+# Run prediction on sample images
+results = model.predict(
+    source="dataset/sample_images",
+    save=True,
+    conf=0.25
+)
+
+print("Prediction completed successfully!")
+print("Results are saved in runs/detect/predict")s

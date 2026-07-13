@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['PAF']
+
+roboflow:
+  workspace: arslans-workspace-kavbm
+  project: logo-detection-qnumt
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/arslans-workspace-kavbm/logo-detection-qnumt/dataset/2
